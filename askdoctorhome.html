@@ -11,8 +11,88 @@
   z-index: -99;
   background-size: cover;
 }
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1c1c54;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+li {
+    float: left;
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #05990C;
+}
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;   
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+.dropdown content b {
+	color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	   }
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+	.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
 </style>
 <body>
+		<div class = "fader">
+	</div>
+	<ul>
+  <li class="dropdown">
+    <!--<a href="javascript:void(0)" class="dropbtn">Locations</a>-->
+    <div class="dropdown-content">
+<!--   <a href="javascript:void(0)" class="dropbtn"><Asia</a> -->
+	    	          <li class="dropdown-submenu">
+   <a href= "diseases.html">Illnesses</a>
+	            <ul class="dropdown-menu">
+			  <a href= "breastcancer.html">Breast Cancer</a>
+			  
+   <a href = "medications.html">Medications</a>
+   <a href= "myclinics.html">Clinics Near Me</a>
+   <a href="mission.html">Our Mission</a>
+   <a href= "generalinfo.html">Misconceptions</a>
+   <a href= "emergency.html">Emergency Medical Attention</a>
+     </div>
+	<p> Our goal is your health </p>
+	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <script>
     var count = 0;
